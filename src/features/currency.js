@@ -24,3 +24,14 @@ export const fetchCurrencies = () => async (dispatch) => {
     payload,
   });
 };
+
+const currencyReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case FETCH_CURRENCY:
+      return action.payload;
+    default:
+      return state;
+  }
+};
+
+export default currencyReducer;

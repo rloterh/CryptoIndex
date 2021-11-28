@@ -1,0 +1,30 @@
+.hero-container {
+  display: flex;
+  padding: 2vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.d-data-1 {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-data-2 {
+  color: white;
+  h2 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  };
+  p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  }
+}
+
+.logo {
+  height: 12vh;
+  width: 12vh;
+}

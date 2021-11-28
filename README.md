@@ -15,7 +15,7 @@ Cryto Index is a mini crytocurrency metric application which list the top 100 co
 | [Live Demo](#live-demo) |
 | [Built With](#built-with)   |
 | [Getting Started](#getting-started)   |
-| [Linters](#linters)   |
+| [Validation & Testing](#validation--testing)   |
 | [Author](#author)       |
 | [License](#license)       |
 

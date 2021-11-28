@@ -3,7 +3,7 @@
 ![Microverse](https://img.shields.io/badge/-Microverse-007bff?style=for-the-badge)
 
 ## Description
-Cryto Index is a mini crytocurrency metric application which list the top 100 coins and provides daily statistical update of each top crypto currency. The hero section lists the percentage dominance of the top cryptocurrencies, Bitcoin and Etheriums on the Crypto currency market. A search filter provides an accessibility of finding a partcular cryptocurrency by keying in some letters that part of the name of that currency. 
+Crypto Index is a mini cryptocurrency metric application which lists the top 100 cryptocurrencies and provides daily statistical update of each top cryptocurrency. The hero section of this application lists the percentage dominance of the top 2 cryptocurrencies, Bitcoin and Etheriums on the Cryptocurrency market. A search filter provides an accessibility feature for finding a partcular cryptocurrency by keying in some letters that are part of the name of that currency. 
 
 
 

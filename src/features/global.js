@@ -21,3 +21,14 @@ export const fetchGenData = () => async (dispatch) => {
     payload,
   });
 };
+
+const globalReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case FETCH_GEN_METRICS:
+      return action.payload;
+    default:
+      return state;
+  }
+};
+
+export default globalReducer;

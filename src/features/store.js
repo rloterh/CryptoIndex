@@ -1,5 +1,4 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
-import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import currencyReducer from './currency';
 import globalReducer from './global';
@@ -9,6 +8,6 @@ const reducer = combineReducers({
   currencyReducer,
 });
 
-const store = createStore(reducer, applyMiddleware(logger, thunk));
+const store = createStore(reducer, applyMiddleware(thunk));
 
 export default store;

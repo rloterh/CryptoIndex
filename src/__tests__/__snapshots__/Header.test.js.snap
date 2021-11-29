@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Header component render correctly 1`] = `
+<header>
+  <nav
+    className="navbar navbar-expand navbar-light bg-light"
+    data-testid="nav-bar"
+  >
+    <a
+      aria-current="page"
+      className="nav-link active"
+      disabled={false}
+      href="/"
+      onClick={[Function]}
+    >
+      <button
+        className="btn btn-primary"
+        disabled={false}
+        id="back-arrow"
+        type="button"
+      >
+        <i
+          className="fas fa-arrow-left"
+        />
+      </button>
+    </a>
+    <a
+      aria-current="page"
+      className="nav-link active"
+      disabled={false}
+      href="/"
+      onClick={[Function]}
+    >
+      <span
+        className="navbar-brand"
+      >
+        Crypto Index
+      </span>
+    </a>
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      id="menu-settings"
+      type="button"
+    >
+      <i
+        className="fas fa-cog"
+      />
+    </button>
+  </nav>
+</header>
+`;

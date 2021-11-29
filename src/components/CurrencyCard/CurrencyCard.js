@@ -4,7 +4,7 @@ import { ListGroup } from 'react-bootstrap';
 import CurrencyImg from '../../assets/currency.png';
 import './CurrencyCard.scss';
 
-const Currency = (props) => {
+const CurrencyCard = (props) => {
   const {
     id, name, symbol, priceUsd, priceBtc, mC, tSp, rank,
   } = props;
@@ -22,7 +22,7 @@ const Currency = (props) => {
     <ListGroup.Item key={id} onClick={goToDetails} data-testid="list-group-item">
       <div className="d-flex" id="data-container">
         <div className="bottom-data d-flex">
-          <img src={CurrencyImg} alt="eth" className="eth-icon" />
+          <img src={CurrencyImg} alt="currency-icon" className="currency-image" />
           <i className="far fa-arrow-alt-circle-right" />
         </div>
         <h3>{name}</h3>
@@ -39,7 +39,7 @@ const Currency = (props) => {
   );
 };
 
-Currency.propTypes = {
+CurrencyCard.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   symbol: PropTypes.string.isRequired,
@@ -50,4 +50,4 @@ Currency.propTypes = {
   rank: PropTypes.number.isRequired,
 };
 
-export default Currency;
+export default CurrencyCard;

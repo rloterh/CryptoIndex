@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Container, ListGroup, Form } from 'react-bootstrap';
 import { fetchCurrencies } from '../../features/currency';
 import { fetchGenData } from '../../features/global';
-import Currency from '../CurrencyCard/CurrencyCard';
+import CurrencyCard from '../CurrencyCard/CurrencyCard';
 import Hero from '../Hero/Hero';
 import './Home.scss';
 
@@ -48,7 +48,7 @@ const Home = () => {
       </div>
       <ListGroup data-testid="list-container">
         {listcurrencies.map((currency) => (
-          <Currency
+          <CurrencyCard
             key={currency.id}
             id={currency.id}
             name={currency.name}

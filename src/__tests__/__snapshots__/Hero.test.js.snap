@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero Hero should render correctly 1`] = `
+<div
+  className="hero-container d-flex"
+  data-testid="global-container"
+>
+  <div
+    className="d-data-1"
+  >
+    <img
+      alt="logo"
+      className="logo"
+      src="logo.png"
+    />
+  </div>
+  <div
+    className="d-data-2"
+  >
+    <h2>
+      ::Currency Dominance::
+    </h2>
+    <p>
+      BTC: 
+      %
+    </p>
+    <p>
+      ETH: 
+      %
+    </p>
+  </div>
+</div>
+`;

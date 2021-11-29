@@ -1,10 +1,10 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import * as reactRedux from 'react-redux';
+import renderer from 'react-test-renderer';
 import Home from '../components/Home/Home';
-import Hero from '../components/Hero/Hero';
-import Currency from '../components/CurrencyCard/CurrencyCard';
 
 jest.mock('react-redux', () => ({
   useSelector: jest.fn(),
@@ -53,34 +53,15 @@ describe('Home', () => {
     render(<Home />);
     expect(screen.getByTestId('list-container')).toBeInTheDocument();
   });
-  test('Create and display GlobalCrypto Data component', () => {
-    const globalData = useSelectorMock(
-      (mockStore) => mockStore.globalReducer[0],
-    );
-    render(
-      <Hero
-        key={globalData.btcDominance}
-        btcDominance={globalData.btcDominance}
-        ethDominance={globalData.ethDominance}
-      />,
-    );
-    expect(screen.getByTestId('global-container')).toBeInTheDocument();
-  });
-  test('Create Currency Component inside Rockets List', () => {
-    const currencyData = useSelectorMock((mockStore) => mockStore.currencyReducer[0]);
-    render(
-      <Currency
-        key={currencyData.id}
-        id={currencyData.id}
-        name={currencyData.name}
-        symbol={currencyData.symbol}
-        priceUsd={currencyData.priceUsd}
-        priceBtc={currencyData.priceBtc}
-        mC={currencyData.marketCap}
-        tSp={currencyData.totalSupply}
-        rank={currencyData.rank}
-      />,
-    );
-    expect(screen.getByTestId('list-group-item')).toBeInTheDocument();
+
+  test('Hero should render correctly', () => {
+    const tree = renderer
+      .create(
+        <BrowserRouter>
+          <Home />
+        </BrowserRouter>,
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });

@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Hero should render correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="hero-container d-flex"
+    data-testid="global-container"
+  >
+    <div
+      className="d-data-1"
+    >
+      <img
+        alt="logo"
+        className="logo"
+        src="logo.png"
+      />
+    </div>
+    <div
+      className="d-data-2"
+    >
+      <h2>
+        ::Currency Dominance::
+      </h2>
+      <p>
+        BTC: 
+        43
+        %
+      </p>
+      <p>
+        ETH: 
+        19
+        %
+      </p>
+    </div>
+  </div>
+  <input
+    className="search-form form-control"
+    id="name-input"
+    onInput={[Function]}
+    placeholder="Search"
+    required={true}
+    type="text"
+    value=""
+  />
+  <div
+    id="home-tag"
+  >
+    <p>
+      Top Cryptocurrencies
+    </p>
+  </div>
+  <div
+    className="list-group"
+    data-testid="list-container"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="list-group-item"
+      data-rr-ui-event-key={null}
+      data-testid="list-group-item"
+      onClick={[Function]}
+    >
+      <div
+        className="d-flex"
+        id="data-container"
+      >
+        <div
+          className="bottom-data d-flex"
+        >
+          <img
+            alt="currency-icon"
+            className="currency-image"
+            src="currency.png"
+          />
+          <i
+            className="far fa-arrow-alt-circle-right"
+          />
+        </div>
+        <h3>
+          BitCoin-Test
+        </h3>
+        <p>
+           ( 
+          BTC-TEST
+           ) 
+        </p>
+        <p>
+          $100.00
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
